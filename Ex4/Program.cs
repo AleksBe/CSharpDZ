@@ -1,15 +1,13 @@
 ﻿int N = 10;
 int a = 1;
-int count = 0;
 
 while(a <= N) // будем считать, что до N включительно
 {
     if(a % 2 == 0)
     {
-        count = count +1;
+        Console.Write(a);
+        Console.Write(", "); // Чтобы числа выводились через запятую (можно и не делать).
     }
     a = a + 1;
 } 
 
-Console.Write("В указанном интервале количество четных чисел= ");
-Console.WriteLine(count);
